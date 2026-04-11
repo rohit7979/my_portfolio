@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="nvr pt-4">
+    <div className=" pt-4">
       <div className="z-50 poppins-regular backdrop-blur-xl px-10 py-3 bg-white/5 text-white flex items-center w-full mx-auto justify-between rounded-full fixed">
         {/* <FaCode className="text-4xl" /> */}
 
@@ -17,13 +17,21 @@ const Navbar = () => {
           >
             <FaCode className="text-4xl" />
           </a>
-        <div className="nvrt hidden sm:flex items-center gap-20 text-lg  ">
+        <div className="nvrt hidden md:flex items-center gap-8 lg:gap-20 text-lg  ">
           <a
             href="#skills"
             className="cursor-pointer hover:text-purple-400 transition duration-300"
           >
             Skills
           </a>
+
+           <a
+            href="#experience"
+            className="cursor-pointer hover:text-purple-400 transition duration-300"
+          >
+            Experience
+          </a>
+
           <a
             href="#projects"
             className="cursor-pointer hover:text-purple-400 transition duration-300"
@@ -37,7 +45,7 @@ const Navbar = () => {
             About Me
           </a>
           <a
-            href="/rohit_resume.pdf"
+            href="/rohit_fullstack_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer hover:text-purple-400 transition duration-300"
@@ -46,7 +54,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="hidden sm:flex">
+        <div className="hidden md:flex">
           <a href="#contact">
             <button className="flex items-center gap-2 text-sm btn-grad text-white px-4 py-2 rounded-full font-light transition duration-300">
               Contact Me{" "}
@@ -58,7 +66,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="sm:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <button onClick={() => setIsOpen(!isOpen)} className="text-3xl text-white">
             {isOpen ? <MdClose /> : <MdMenu />}
           </button>
@@ -69,7 +77,7 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 w-full h-full z-50 bg-black text-white flex flex-col items-center justify-center transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } sm:hidden`}
+        } md:hidden`}
       >
         <button
           onClick={() => setIsOpen(false)}
@@ -84,6 +92,14 @@ const Navbar = () => {
         >
           Skills
         </a>
+
+          <a
+            href="#experience"
+            className="my-4 text-lg font-light hover:text-purple-400 transition duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Experience
+          </a>
         <a
           href="#projects"
           className="my-4 text-lg font-light hover:text-purple-400 transition duration-300"
@@ -99,7 +115,7 @@ const Navbar = () => {
           About Me
         </a>
         <a
-            href="/rohit_resume.pdf"
+            href="/rohit_fullstack_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="my-4 text-lg font-light hover:text-purple-400 transition duration-300"

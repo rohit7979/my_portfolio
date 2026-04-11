@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -209,11 +213,11 @@ body,
   border-radius: 18px;
 }
 
-@media only screen and (max-width: 770px) {
+/* @media only screen and (max-width: 770px) {
    .nvrt{
     gap: 35px;
   }
-}
+} */
 
 
 @media only screen and (max-width: 500px) {

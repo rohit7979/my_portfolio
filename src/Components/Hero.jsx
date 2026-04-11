@@ -110,8 +110,8 @@ const Hero = () => {
                 proficient in crafting dynamic visually engaging websites with seamless front-end and robust back-end systems.
               </motion.h1>
               <a
-                href="/rohit_resume.pdf"
-                download={"rohit_resume.pdf"}
+                href="/rohit_fullstack_resume.pdf"
+                download={"rohit_fullstack_resume.pdf"}
                 target="_blank"
               >
                 <motion.div

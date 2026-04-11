@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -9,6 +9,11 @@ const ContactPage = () => {
   const [loading, setLoading] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
   const form = useRef(); // Create ref for form
+
+  // Initialize EmailJS on component mount
+  useEffect(() => {
+    emailjs.init("dZSMWmYkOgoNbXd_G");
+  }, []);
 
   // Formik for form validation and handling
   const formik = useFormik({
@@ -31,10 +36,9 @@ const ContactPage = () => {
       setLoading(true);
       try {
         await emailjs.sendForm(
-          "service_dtvemqp", // Replace with your EmailJS service ID
+          "service_2tpenbl", // Replace with your EmailJS service ID
           "template_jfupsn4", // Replace with your EmailJS template ID
-          form.current,       // Form ref for EmailJS
-          "dZSMWmYkOgoNbXd_G" // Replace with your EmailJS public key
+          form.current        // Form ref for EmailJS
         );
         setMessageSent(true);
         resetForm();

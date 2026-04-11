@@ -5,6 +5,7 @@ import StarsCanvas from "./Components/Stars";
 import About from "./Components/About";
 import ContactForm from "./Components/ContactForm";
 import TechStacks from "./Components/TechStacks";
+import Experience from "./Components/Experience";
 import { HashRouter } from "react-router-dom";
 import ScrollBtn from "./Components/ScrollBtn";
 import Footer from "./Components/Footer";
@@ -19,6 +20,9 @@ function App() {
         </section>
         <section id="skills">
           <TechStacks />
+        </section>
+        <section id="experience">
+          <Experience />
         </section>
         <section id="projects">
           <Projects />

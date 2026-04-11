@@ -16,7 +16,7 @@ const About = () => {
         <span className="josefin-sans-light">About </span>
         <span className="josefin-sans-font">Me</span>
       </div>
-      <div className="md:w-[80%] mx-auto flex flex-col-reverse md:flex-row py-10">
+      <div className="md:w-[80%] mx-auto flex flex-col-reverse lg:flex-row py-10">
         {/* content */}
         <motion.div
           initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
@@ -29,7 +29,16 @@ const About = () => {
         >
           <div className="m-8 md:text-lg">
             <p className="text-white/80 md:w-[90%]">
-            Hello, I'm Rohit, a Full Stack Developer with a passion for crafting digital solutions that enhance online experiences. I hold a bachelor's degree in commerce from Binod Bihari Mahto Koylanchal University Dhanbad, and my journey into software development stems from a deep interest in creating impactful digital products. I gained my full stack development skills through a comprehensive course at Masai School, where I honed my expertise in the MERN stack. Over time, I've built responsive, user-friendly applications, and I’m enthusiastic about leveraging my skills to drive innovation in the ever-evolving tech industry.
+              Hello, I'm Rohit Kumar Verma, a Full Stack Developer specializing
+              in the MERN stack. I build scalable, responsive, and user-centric
+              web applications with a strong focus on performance and clean
+              code. I have experience working on real-world projects like
+              e-commerce platforms and real estate systems, handling both
+              frontend and backend development. Alongside this, I actively use
+              AI tools like Claude, Chatgpt, Cursor, Copilot, and explore AI agents to build smarter, more efficient,
+              and intelligent applications. I’m passionate about solving
+              real-world problems, continuously learning, and leveraging both
+              web and AI technologies to create impactful digital products.
             </p>
           </div>
           {/* socials */}
@@ -87,7 +96,7 @@ const About = () => {
           >
             <SwiperSlide>
               <img
-                src="/rohit4.jpg"
+                src="/rohit5.jpeg"
                 alt="Your Photo 1"
                 className="w-[80%] h-[80%] md:w-full md:h-full object-cover bg-transparent" // Smaller on mobile
               />
