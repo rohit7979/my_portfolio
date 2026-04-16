@@ -111,8 +111,8 @@ const Hero = () => {
               </motion.h1>
               <a
                 href="/rohit_fullstack_resume.pdf"
-                download={"rohit_fullstack_resume.pdf"}
                 target="_blank"
+                download={"rohit_fullstack_resume.pdf"}
               >
                 <motion.div
                   className="rounded-full w-fit flex items-center py-2 px-5 mt-8 gap-2 btn-grad cursor-pointer"

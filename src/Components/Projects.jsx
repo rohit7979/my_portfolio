@@ -144,7 +144,7 @@ const Projects = () => {
               >
                 <FaGithub />
               </a>
-              <a href="https://newfwrd.netlify.app/" target="_blank">
+              <a href="https://cheerful-kheer-485925.netlify.app/" target="_blank">
                 <IoGlobeOutline />
               </a>
             </div>

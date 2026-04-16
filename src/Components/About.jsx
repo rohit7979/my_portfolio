@@ -40,6 +40,16 @@ const About = () => {
               real-world problems, continuously learning, and leveraging both
               web and AI technologies to create impactful digital products.
             </p>
+            {/* Soft Skills */}
+            <div className="mt-6">
+              <h3 className="text-white text-xl font-semibold mb-3">Soft Skills</h3>
+              <ul className="text-white/80 list-disc list-inside space-y-1">
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+                <li>Effective Communication</li>
+              </ul>
+            </div>
           </div>
           {/* socials */}
           <div className="ml-7">
